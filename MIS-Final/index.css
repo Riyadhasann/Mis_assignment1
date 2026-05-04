@@ -1,0 +1,140 @@
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    font-family: 'Arial', sans-serif;
+    background: radial-gradient( circle 369px at -2.9% 12.9%,  rgba(247,234,163,1) 0%, rgba(236,180,238,0.56) 46.4%, rgba(163,203,247,1) 100.7% );
+}
+
+header {
+    background: rgb(33, 27, 126);
+    background: radial-gradient(circle, rgba(33,27,126,1) 0%, rgba(51,44,197,1) 26%, rgba(76,69,220,1) 43%, rgba(137,129,255,1) 68%);
+    color:white;
+    text-align: center;
+    padding: 20px;
+    border-bottom: 4px solid rgb(0, 123, 255)
+    
+}
+
+
+nav {
+    background-image: radial-gradient( circle 369px at -2.9% 12.9%,  rgba(247,234,163,1) 0%, rgba(236,180,238,0.56) 46.4%, rgba(163,203,247,1) 100.7% );
+    padding: 10px 0;
+    border-top: 4px solid rgb(0, 123, 255)
+    
+
+}
+
+
+main {
+    flex: 1;
+    padding: 20px;
+}
+
+
+.meal-image {
+    width: 100%;
+    height: auto;
+    border-radius: 7px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease-in-out;
+
+}
+
+.meal-image:hover {
+    transform: scale(1.1);
+    transition: all 0.3s ease-in-out;
+}
+
+.meal-card {
+    margin-bottom: 20px;
+    border-radius: 10px;
+    transition: all 0.3s ease-in-out;
+    overflow: hidden;
+}
+
+.meal-card:hover {
+    transform: scale(1.05);
+    cursor: pointer;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+
+.card-body {
+    background-color: rgb(255, 255, 255); 
+    padding: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.card-title {
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.card p {
+    font-size: 14px;
+}
+
+.show-all-btn {
+    margin-top: 20px;
+    background-color: rgb(0, 123, 255);
+    border: none;
+    padding: 10px 20px;
+    color: rgb(255, 255, 255);
+    font-size: 16px;
+    border-radius: 5px;
+    transition: all 0.2s ease-in-out;
+}
+
+.show-all-btn:hover {
+    background-color: rgb(3, 101, 205); 
+    cursor: pointer;
+}
+
+
+
+.modal-content {
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.modal-header {
+    background-color: rgb(29, 126, 223);
+    color: white;
+    border-bottom: 2px solid rgb(0, 123, 255)
+}
+
+.modal-footer {
+    border-top: 2px solid rgb(0, 123, 255);
+}
+.modal-body {
+    font-size: 16px;
+    color: rgb(33, 37, 41);
+}
+
+
+footer {
+    background-color: rgb(78, 166, 254);
+    color: white;
+    text-align: center;
+    padding: 15px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+@media (max-width: 768px) {
+    .meal-card {
+        margin-bottom: 10px;
+    }
+
+    .navbar a {
+        font-size: 10px;
+        padding: 10px;
+    }
+
+    .show-all-btn {
+        font-size: 10px;
+        padding: 5px;
+    }
+}
